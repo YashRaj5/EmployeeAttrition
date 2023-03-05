@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<MonthlyIncome &le; 0.131<br/>entropy = 0.638<br/>samples = 514<br/>value = [431, 83]<br/>class = 1>, fillcolor="#ea995f"] ;
+1 [label=<YearsInCurrentRole &le; 0.5<br/>entropy = 0.892<br/>samples = 181<br/>value = [125, 56]<br/>class = 1>, fillcolor="#f1b992"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<entropy = 1.0<br/>samples = 52<br/>value = [26, 26]<br/>class = 1>, fillcolor="#ffffff"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.782<br/>samples = 129<br/>value = [99, 30]<br/>class = 1>, fillcolor="#eda775"] ;
+1 -> 3 ;
+4 [label=<MonthlyIncome &le; 0.665<br/>entropy = 0.406<br/>samples = 333<br/>value = [306, 27]<br/>class = 1>, fillcolor="#e78c4a"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<entropy = 0.461<br/>samples = 277<br/>value = [250, 27]<br/>class = 1>, fillcolor="#e88f4e"] ;
+4 -> 5 ;
+6 [label=<entropy = 0.0<br/>samples = 56<br/>value = [56, 0]<br/>class = 1>, fillcolor="#e58139"] ;
+4 -> 6 ;
+}
